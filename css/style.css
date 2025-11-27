@@ -1,0 +1,148 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero .texto {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+@media (max-width: 250px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 10px;
+    }
+
+    .hero img {
+        max-width: 50%;
+    }
+
+    .hero .texto {
+        font-size: 10px;
+    }
+}
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 15px;
+    }
+
+    .hero img {
+        max-width: 100%;
+    }
+
+    .hero .texto {
+        padding: 0 10px;
+    }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+    nav ul {
+        justify-content: space-around;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .hero img {
+        max-width: 80%;
+    }
+
+    .hero .texto {
+        font-size: 16px;
+    }
+}
+@media (min-width: 1025px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 40px;
+    }
+
+    .hero img {
+        max-width: 60%;
+    }
+
+    .hero .texto {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .hero img {
+        max-width: 50%;
+    }
+
+    .hero .texto {
+        font-size: 20px;
+    }
+
+    nav ul {
+        justify-content: space-evenly;
+    }
+}
